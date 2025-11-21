@@ -1,0 +1,46 @@
+/* TAMBAHAN UNTUK BOOTSTRAP */
+.mx-6 {
+  margin-left: 4rem; 
+  margin-right: 4rem;
+}
+
+.mx-7 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+.bg-mycolor {
+  background-color: #efcb00; 
+}
+
+.text-mycolor {
+  color: #efcb00;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link.active {
+  color: #efcb00;
+  text-decoration: underline;
+  text-decoration-color: #efcb00;
+  text-underline-offset: 5px;
+}
+/* TAMBAHAN UNTUK BOOTSTRAP - END*/
+
+/* VANILLA CSS */
+  body {
+    background-image: url(/image/𝓩𝓮𝓷𝓲𝓽𝓼𝓾\ 𝓐𝓰𝓪𝓽𝓼𝓾𝓶𝓪.jpeg);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+
+  }
+/* VANILLA CSS - END */
