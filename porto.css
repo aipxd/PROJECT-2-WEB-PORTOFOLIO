@@ -9,6 +9,11 @@
   margin-right: 6rem;
 }
 
+.my-7 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
 .bg-mycolor {
   background-color: #efcb00;
 }
@@ -42,8 +47,7 @@
 }
 
 .carousel-item {
-  background-color: aqua;
-  width: 30rem;
+  width: 100%;
 }
 
 /* TAMBAHAN UNTUK BOOTSTRAP - END*/
@@ -58,11 +62,11 @@ body {
 }
 
 header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .fotoFormat {
@@ -113,13 +117,22 @@ header {
   max-width: 500px;
 }
 
-.right-side .text-area a {
+.right-side .text-area>a {
   background-color: none;
   text-decoration: none;
   color: #efcb00;
   padding: .5rem 2rem;
   border-radius: 2rem;
   border: #efcb00 solid 1.5px;
+  transition: all .3s ease;
+}
+
+.right-side .text-area>a:hover {
+  box-shadow: 0 0 20px rgba(255, 220, 0, 0.5);
+  background-color: #efcb00;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #efcb00;
 }
 
 .right-side .text-area .icon {
@@ -129,32 +142,21 @@ header {
   gap: 1em;
 }
 
-.icon .icon-linkedin {
+.icon .icon-sosmed {
+  color: #efcb00;
   background-color: none;
   padding: 6px 10px;
   border-radius: 50%;
   border: #efcb00 solid 1.5px;
+  transition: all .3s ease;
 }
 
-.icon .icon-github {
-  background-color: none;
-  padding: 6px 10px;
-  border-radius: 50%;
-  border: #efcb00 solid 1.5px;
-}
-
-.icon .icon-instagram {
-  background-color: none;
-  padding: 6px 10px;
-  border-radius: 50%;
-  border: #efcb00 solid 1.5px;
-}
-
-.icon .icon-facebook {
-  background-color: none;
-  padding: 6px 10px;
-  border-radius: 50%;
-  border: #efcb00 solid 1.5px;
+.icon .icon-sosmed:hover {
+  box-shadow: 0 0 15px rgba(239, 203, 0, 0.5);
+  background-color: #efcb00;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px #efcb00;
 }
 
 .skill h1 {
@@ -164,17 +166,51 @@ header {
 
 .left-project {
   width: 50%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.284);
 }
+
 .left-project p {
   text-align: justify;
   max-width: 500px;
 }
+
 .right-project {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   border: rgb(255, 255, 255) solid 2px;
+}
+
+.carousel-item img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  background: #111;
+  border-top: 2px solid #000000;
+  /* garis kuning */
+}
+
+.footer p {
+  color: #ccc;
+  margin: 0;
+}
+
+.footer h4 {
+  color: #efcb00;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.carousel {
+  display: block;
 }
 
 /* VANILLA CSS - END */
@@ -186,9 +222,18 @@ header {
     width: 200px;
     height: auto;
   }
-.right-project {
-  width: 25rem;
-}
+
+  .right-project {
+    width: 100%;
+    max-width: 100%;
+  }
+
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }
 
 @media (min-width: 769px) {
@@ -198,3 +243,57 @@ header {
 
   }
 }
+
+/* RESPONSIVE END */
+
+/* ANIMASI TYPEWRITER */
+.cursor,
+#name {
+  border-right: 3px solid#efcb00;
+  animation: blinkCursor .8s infinite;
+}
+
+@keyframes blinkCursor {
+  0% {
+    border-right-color: #efcb00;
+  }
+
+  50% {
+    border-right-color: transparent;
+  }
+
+  100% {
+    border-right-color: #efcb00;
+  }
+}
+
+/* ANIMASI TYPEWRITER END */
+
+
+/* REVEAL ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* REVEAL ANIMATION END */
+
+
+/* CURSOR EFFECT */
+/* .hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,200,0,0.4), transparent 60%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.1s linear;
+} */
