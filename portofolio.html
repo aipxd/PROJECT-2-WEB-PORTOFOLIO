@@ -7,9 +7,11 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <!-- Bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Vanilla CSS -->
   <link rel="stylesheet" href="porto.css">
-  
+
   <title>My Porto | Adibta Ilham W</title>
 </head>
 
@@ -18,7 +20,8 @@
     <nav class="navbar navbar-expand-lg bg-black navbar-dark">
       <div class=" container-fluid m-3">
 
-        <a class="fw-bold fs-4  text-mycolor no-decoration" href="#">ADIBTA <span style="color: aliceblue;">PROJECT</span></a>
+        <a class="fw-bold fs-4  text-mycolor no-decoration" href="#">ADIBTA <span
+            style="color: aliceblue;">PROJECT</span></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -30,10 +33,13 @@
               <a class="nav-link" aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+              <a class="nav-link" href="#">Skill</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
             </li>
           </ul>
         </div>
@@ -42,15 +48,104 @@
     </nav>
   </header>
 
-  <main>
-    <div class="d-flex">
-      <div>
-        <h1>kiri</h1>
+  <main class="bg-black">
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="left-side">
+        <div class="foto-profile">
+          <img src="/image/profile.jpeg" alt="">
+        </div>
       </div>
-      <div>
-        <h1>kanan</h1>
+
+      <div class="right-side">
+        <div class="text-area text-white mx-5 fs-5">
+          <h1>Hi, It's <span class="text-mycolor fw-bold">Adibta</span></h1>
+          <h2>Im a <span class="text-mycolor">Beginner FE-Developer</span></h2>
+          <p>I'm a beginner Front-End Developer who loves turning ideas into clean and interactive user interfaces.
+            Saat ini saya sedang belajar dan memperdalam HTML, CSS, JavaScript, dan Bootstrap untuk membangun website
+            yang modern dan responsif.</p>
+          <div class="icon text-mycolor">
+            <div class="icon-linkedin">
+              <i class="bi bi-linkedin "></i>
+            </div>
+            <div class="icon-github">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="icon-instagram">
+              <i class="bi bi-instagram"></i>
+            </div>
+            <div class="icon-facebook">
+              <i class="bi bi-facebook"></i>
+            </div>
+          </div>
+          <a href="#">Hire Me!</a>
+        </div>
       </div>
     </div>
+    <!-- END HERO -->
+
+    <!-- SKILL SECTION -->
+    <div class="skill my-5 text-white text-center">
+      <h1 class="fw-bold mb-5">SKILL</h1>
+      <div class="skill-tech d-flex gap-5 justify-content-center fs-1 flex-wrap">
+        <i class="fab fa-html5"> HTML</i>
+        <i class="fa-brands fa-css3-alt"> CSS</i>
+        <i class="fa-brands fa-square-js"> Java script</i>
+        <i class="fa-brands fa-bootstrap"> bootstrap</i>
+      </div>
+    </div>
+    <!-- SKILL SECTION END -->
+
+    <!-- PROJECT SECTION -->
+    <div class="project bg-mycolor py-2">
+      <div class="d-flex p-5 justify-content-center align-items-center flex-wrap">
+
+        <div class="left-project text-white">
+          <h1>My Projects</h1>
+          <p>Berikut adalah proyek-proyek yang pernah saya buat. Mulai dari halaman login sebuah web, halaman search engine, dan home page pariwisata sudah pernah saya buat. saya harap semua proyek ini bisa menjadi bukti perkembangan saya di dunia Front-end Developement.</p>
+        </div>
+
+        <div id="carouselExampleIndicators" class="right-project carousel slide p-2">
+
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/image/HERO-TM.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/image/LOGIN-ULTRAYAM.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/image/SE-ULTRAYAM.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="/image/LOGIN-TG.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <!-- PROJECT SECTION END -->
   </main>
 
 
@@ -59,7 +154,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-
+  <script src="https://kit.fontawesome.com/60e9f1938e.js" crossorigin="anonymous"></script>
   <script src="porto.js"></script>
 </body>
 

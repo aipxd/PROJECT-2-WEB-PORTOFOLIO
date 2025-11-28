@@ -1,6 +1,6 @@
 /* TAMBAHAN UNTUK BOOTSTRAP */
 .mx-6 {
-  margin-left: 4rem; 
+  margin-left: 4rem;
   margin-right: 4rem;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .bg-mycolor {
-  background-color: #efcb00; 
+  background-color: #efcb00;
 }
 
 .text-mycolor {
@@ -21,8 +21,11 @@
   text-decoration: none;
 }
 
-.nav-link {
+.nav-link:hover {
   position: relative;
+  text-decoration: underline;
+  text-decoration-color: #efcb00;
+  text-underline-offset: 5px;
 }
 
 .nav-link.active {
@@ -31,16 +34,167 @@
   text-decoration-color: #efcb00;
   text-underline-offset: 5px;
 }
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  background-color: aqua;
+  width: 30rem;
+}
+
 /* TAMBAHAN UNTUK BOOTSTRAP - END*/
 
 /* VANILLA CSS */
-  body {
-    background-image: url(/image/𝓩𝓮𝓷𝓲𝓽𝓼𝓾\ 𝓐𝓰𝓪𝓽𝓼𝓾𝓶𝓪.jpeg);
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
+    z-index: 1000;
+}
+
+.fotoFormat {
+  width: 100%;
+  height: 100%;
+  transition: all .3s ease;
+  object-fit: cover;
+  display: block;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 0 2rem 0;
+  padding: 2rem 0 4rem 0;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  margin: 1rem 0;
+}
+
+.foto-profile {
+  background-color: red;
+  overflow: hidden;
+  width: 440px;
+  height: 500px;
+  border-radius: 100%;
+}
+
+.foto-profile img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.right-side {
+  display: flex;
+  padding: 1rem;
+}
+
+.right-side .text-area {
+  max-width: 500px;
+}
+
+.right-side .text-area a {
+  background-color: none;
+  text-decoration: none;
+  color: #efcb00;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  border: #efcb00 solid 1.5px;
+}
+
+.right-side .text-area .icon {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon .icon-linkedin {
+  background-color: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  border: #efcb00 solid 1.5px;
+}
+
+.icon .icon-github {
+  background-color: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  border: #efcb00 solid 1.5px;
+}
+
+.icon .icon-instagram {
+  background-color: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  border: #efcb00 solid 1.5px;
+}
+
+.icon .icon-facebook {
+  background-color: none;
+  padding: 6px 10px;
+  border-radius: 50%;
+  border: #efcb00 solid 1.5px;
+}
+
+.skill h1 {
+  text-decoration: underline 5px #efcb00 solid;
+  text-underline-offset: 1rem;
+}
+
+.left-project {
+  width: 50%;
+}
+.left-project p {
+  text-align: justify;
+  max-width: 500px;
+}
+.right-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  border: rgb(255, 255, 255) solid 2px;
+}
+
+/* VANILLA CSS - END */
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .foto-profile {
+    width: 200px;
+    height: auto;
+  }
+.right-project {
+  width: 25rem;
+}
+}
+
+@media (min-width: 769px) {
+  .foto-profile {
+    width: 330px;
+    height: auto;
 
   }
-/* VANILLA CSS - END */
+}
