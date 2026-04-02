@@ -54,6 +54,7 @@
 
 /* VANILLA CSS */
 body {
+  background: #111;
   width: 100%;
   display: flex;
   flex-direction: column;
