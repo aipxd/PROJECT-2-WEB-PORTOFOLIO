@@ -10,7 +10,6 @@ links.forEach(link => {
 }
 );
 
-
 // Typewriter Effect
 const firstText = "Hi, It's ";
 const nameText = "Adibta";
@@ -39,9 +38,7 @@ function typeName() {
     setTimeout(typeName, 90);
   }
 }
-
 typeFirst();
-
 
 //Fade In Effect
 const fadeElements = document.querySelectorAll(".fade-in");
@@ -57,9 +54,3 @@ function checkFadeIn() {
 
 window.addEventListener("scroll", checkFadeIn);
 checkFadeIn(); 
-
-
-//Cursor Effect
-document.addEventListener("mousemove", (e) => {
-  const glow = document.querySelector(".hero::before");
-});

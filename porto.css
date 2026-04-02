@@ -283,17 +283,3 @@ header {
 }
 
 /* REVEAL ANIMATION END */
-
-
-/* CURSOR EFFECT */
-/* .hero::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255,200,0,0.4), transparent 60%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: transform 0.1s linear;
-} */
